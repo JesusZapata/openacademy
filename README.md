@@ -1,4 +1,3 @@
-# openacademy
 Open Academy
 =================
 Open Academy module for managing trainings:
