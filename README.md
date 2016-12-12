@@ -1,2 +1,8 @@
-# openacademy-project
-Open Academy Project
+# openacademy
+Open Academy
+=================
+Open Academy module for managing trainings:
+
+            - training courses
+            - training sessions
+            - attendees registration
