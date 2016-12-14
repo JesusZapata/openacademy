@@ -9,6 +9,7 @@
                     <sheet>
                         <group string="General">
                             <field name="course_id"/>
+                            <field name="taken_seats" widget="progressbar"/>
                             <field name="name"/>
                             <field name="instructor_id"/>
                         </group>
