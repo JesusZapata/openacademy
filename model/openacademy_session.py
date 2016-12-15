@@ -33,6 +33,9 @@ class Session(models.Model):
     hours = fields.Float(string="Duration in hours",
                          compute='_get_hours', inverse='_set_hours')
 
+    attendees_count = fields.Integer(
+        string="Attendees count", compute='_get_attendees_count', store=True)
+
     @api.one
     @api.depends('seats', 'attendee_ids')
     def _taken_seats(self):
@@ -63,6 +66,11 @@ class Session(models.Model):
     def _check_instructor_not_in_attendees(self):
         if self.instructor_id and self.instructor_id in self.attendee_ids:
             raise exceptions.ValidationError("A session's instructor can't be an attendee")
+
+    @api.one
+    @api.depends('attendee_ids')
+    def _get_attendees_count(self):
+        self.attendees_count = len(self.attendee_ids)
 
     @api.one
     @api.depends('start_date', 'duration')
