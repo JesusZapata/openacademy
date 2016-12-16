@@ -1,25 +1,29 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* openacademy
+# 	* openacademy
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-16 02:21+0000\n"
-"PO-Revision-Date: 2016-12-16 02:21+0000\n"
-"Last-Translator: <>\n"
+"PO-Revision-Date: 2016-12-16 08:36-0400\n"
+"Last-Translator: Jesus Zapata <jesus@vauxoo.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
+"Language: es_VE\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #. module: openacademy
 #: model:ir.actions.act_window,help:openacademy.course_list_action
-msgid "<p class=\"os_view_nocontent_create\">Create the firts Cours</p>\n"
+msgid ""
+"<p class=\"os_view_nocontent_create\">Create the firts Cours</p>\n"
 "            "
-msgstr "<p class=\"os_view_nocontent_create\">Crea el primer curso</p>\n"
+msgstr ""
+"<p class=\"os_view_nocontent_create\">Crea el primer curso</p>\n"
 "            "
 
 #. module: openacademy
@@ -138,8 +142,7 @@ msgid "Courses"
 msgstr "Cursos"
 
 #. module: openacademy
-#: field:openacademy.course,create_uid:0
-#: field:openacademy.session,create_uid:0
+#: field:openacademy.course,create_uid:0 field:openacademy.session,create_uid:0
 #: field:openacademy.wizard,create_uid:0
 msgid "Created by"
 msgstr "Creado por"
@@ -211,8 +214,7 @@ msgid "Group By"
 msgstr "Agrupado por"
 
 #. module: openacademy
-#: field:openacademy.course,id:0
-#: field:openacademy.session,id:0
+#: field:openacademy.course,id:0 field:openacademy.session,id:0
 #: field:openacademy.wizard,id:0
 msgid "ID"
 msgstr "ID"
@@ -230,8 +232,7 @@ msgid "Increase seats or remove excess attendees"
 msgstr "Aumentar los asientos o eliminar el exceso de asistentes"
 
 #. module: openacademy
-#: field:openacademy.session,instructor_id:0
-#: field:res.partner,instructor:0
+#: field:openacademy.session,instructor_id:0 field:res.partner,instructor:0
 msgid "Instructor"
 msgstr "Instructor"
 
@@ -243,15 +244,13 @@ msgid "Last Modified on"
 msgstr "Última modificación en"
 
 #. module: openacademy
-#: field:openacademy.course,write_uid:0
-#: field:openacademy.session,write_uid:0
+#: field:openacademy.course,write_uid:0 field:openacademy.session,write_uid:0
 #: field:openacademy.wizard,write_uid:0
 msgid "Last Updated by"
 msgstr "Última Actualización por"
 
 #. module: openacademy
-#: field:openacademy.course,write_date:0
-#: field:openacademy.session,write_date:0
+#: field:openacademy.course,write_date:0 field:openacademy.session,write_date:0
 #: field:openacademy.wizard,write_date:0
 msgid "Last Updated on"
 msgstr "Ultima actualizacion en"
@@ -444,4 +443,3 @@ msgstr "duración:"
 #: view:openacademy.wizard:openacademy.wizard_form_view
 msgid "or"
 msgstr "o"
-
