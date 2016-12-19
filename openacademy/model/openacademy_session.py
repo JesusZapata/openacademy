@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from datetime import timedelta
-from openerp import fields, models, api, exceptions, _
-
 """
 This module create model of Session
 """
+
+from datetime import timedelta
+from openerp import fields, models, api, exceptions, _
 
 
 class Session(models.Model):

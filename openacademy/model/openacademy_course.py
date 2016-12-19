@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-from openerp import fields, models, api, _
 
 """
 This module create model of Course
 """
+
+from openerp import fields, models, api, _
 
 
 class Course(models.Model):

@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-from openerp import fields, models
 
 """
 This module create model of Partner
 """
+
+from openerp import fields, models
 
 
 class Partner(models.Model):
