@@ -21,7 +21,8 @@ sessions = call('openacademy.session', 'search_read', [], ['name', 'seats'])
 for session in sessions:
     print "Session %s (%s seats)" % (session['name'], session['seats'])
 
-course_id = call('openacademy.course', 'search', [('name', 'ilike', 'Course 0')])[0]
+course_id = call('openacademy.course', 'search', [
+                 ('name', 'ilike', 'Course 0')])[0]
 session_id = call('openacademy.session', 'create', {
     'name': 'My session',
     'course_id': course_id,

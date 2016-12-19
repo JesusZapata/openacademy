@@ -45,12 +45,15 @@ class GlobalTestOpenAcademySession(TransactionCase):
         })
 
         # Check draft state
-        self.assertEqual(session_test.state, 'draft', 'Initial state should be in "draft"')
+        self.assertEqual(session_test.state, 'draft',
+                         'Initial state should be in "draft"')
 
         # Change confirmed state
         session_test.signal_workflow('confirm')
-        self.assertEqual(session_test.state, 'confirmed', "Signal confirm don't work fine!")
+        self.assertEqual(session_test.state, 'confirmed',
+                         "Signal confirm don't work fine!")
 
         # Change done state
         session_test.signal_workflow('done')
-        self.assertEqual(session_test.state, 'done', "Signal done don't work fine!")
+        self.assertEqual(session_test.state, 'done',
+                         "Signal done don't work fine!")
