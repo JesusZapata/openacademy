@@ -3,9 +3,9 @@
 from datetime import timedelta
 from openerp import fields, models, api, exceptions, _
 
-'''
+"""
 This module create model of Session
-'''
+"""
 
 
 class Session(models.Model):
@@ -22,9 +22,16 @@ class Session(models.Model):
     color = fields.Integer()
 
     instructor_id = fields.Many2one('res.partner', string='Instructor',
-                                    domain=['|', ('instructor', '=', True), ('category_id.name', 'ilike', 'Teacher')])
+                                    domain=[
+                                        '|',
+                                        ('instructor', '=', True),
+                                        ('category_id.name',
+                                         'ilike',
+                                         'Teacher')
+                                    ])
     course_id = fields.Many2one('openacademy.course',
-                                ondelete='cascade', string='Course', required=True)
+                                ondelete='cascade', string='Course',
+                                required=True)
     attendee_ids = fields.Many2many('res.partner', string='Attendees')
 
     taken_seats = fields.Float(string="Taken seats", compute='_taken_seats')
@@ -69,7 +76,8 @@ class Session(models.Model):
             return {
                 'warning': {
                     'title': _("Incorrect 'seats' value"),
-                    'message': _("The number of available seats may not be negative"),
+                    'message': _("The number of available seats may not be "
+                                 "negative"),
                 },
             }
         if self.seats < len(self.attendee_ids):
