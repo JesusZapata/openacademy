@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-from openerp import fields, models, api
 
 """
 This module create model of Wizard
 """
+
+from openerp import fields, models, api
 
 
 class Wizard(models.TransientModel):
